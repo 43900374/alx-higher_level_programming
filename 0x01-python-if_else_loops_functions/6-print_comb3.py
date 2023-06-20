@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-
-for i in range(0, 10):
-    for j in range(1, 10):
-        if i >= j:
-            continue
-        if i == 8 and j == 9:
-            print("{:d}{:d}".format(i, j))
+for z in range(0, 10):
+    for w in range(z+1, 10):
+        print("{:d}".format(z), end='')
+        if z == 8 and w == 9:
+            print("{:d}".format(w), end='\n')
         else:
-            print("{:d}{:d}".format(i, j), end=", ")
+            print("{:d}".format(w), end=', ')
